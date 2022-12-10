@@ -321,10 +321,12 @@ a {
 .box-wrapper {
   background-color: #1F4590;
   border-radius: 50px 50px 0 0;
+  gap: 20px;
 }
 .box-wrapper .box-service {
   position: relative;
   padding: 30px;
+  max-width: 300px;
 }
 .box-wrapper .box-service i {
   padding-bottom: 20px;

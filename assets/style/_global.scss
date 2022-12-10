@@ -256,10 +256,12 @@ a {
         
         background-color: $first-color;
         border-radius: 50px 50px 0 0;
+        gap: 20px;
 
     .box-service {
         position: relative;
         padding: 30px;
+        max-width: 300px;
     
 
         i {
@@ -314,6 +316,7 @@ a {
         transition: .4s ease-in-out;
     }
 }
+
 
 
 // Product Css
