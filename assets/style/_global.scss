@@ -1,0 +1,801 @@
+@import 'fonts';
+@import 'colors';
+@import 'button';
+
+
+body {
+    background-color: $body-color;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-margin {
+    margin-top: 180px;
+}
+
+.navbar-brand {
+        .nav-tour {
+            color: $first-color;
+            font-weight: map-get($fonts-weight , bold );
+            font-size: 45px;
+        }
+        
+        .nav-avel {
+            font-size: 30px;
+            color: $second-color;
+            font-weight: map-get($fonts-weight , medium );
+
+        }
+}
+
+.navbar-nav {
+
+    .nav-link {
+        font-weight: map-get($fonts-weight, medium );
+        color: $first-color !important;
+    
+        &:active{
+            color: $second-color !important;
+        }
+        &:hover{
+            color: $second-color !important;
+        }
+    }
+}
+    
+// Hero css
+.heading-section {
+    font-family: 'Raleway', sans-serif;
+    font-weight: map-get($fonts-weight, bold );
+    font-size: 40px;
+    color: $first-color;
+}
+
+.hero-avel {
+    color: $second-color;
+    font-size: 30px;
+}
+
+.subheading-section {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: map-get($fonts-weight, regular );
+    font-size: 18px;
+    color: $subheading-color;
+}
+
+.check {
+    i  {
+        font-size: 30px;
+        color: $first-color;
+        
+    }
+ 
+    p {
+        font-size: 18px;
+        font-weight: map-get($fonts-weight, bold );
+        color: $subheading-color;
+    }
+}
+
+.form-panel {
+    position: relative;
+    width: 640px;
+    height: 110px;
+    background-color: #fff;
+    border-radius: 70px;
+    border: 3px solid #fff;
+    flex-wrap: wrap;
+
+
+    @include media-breakpoint-down(md) {
+    width: 540px;
+    height: 110px;
+    border: 2px solid #fff;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 350px;
+        height: 180px;   
+        background-color: transparent;
+        border: none;
+        }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 1px;
+
+    }
+
+    .title-form {
+        position: absolute;
+        top: -27px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $first-color;
+        color: #fff;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: map-get($fonts-weight, bold );
+
+        @include media-breakpoint-down(sm) {
+            top: -35px;
+
+        }
+        
+    }
+
+    .form-location, .form-date {
+        position: relative;
+
+        .cal, .loc {
+            color: $first-color;
+            font-size: 30px;
+        }
+    }
+
+    .form-location {
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 10px;
+        }
+    }
+    
+    .form-date {
+        @include media-breakpoint-down(sm) {
+            margin-left: 50px;
+            margin-bottom:10px ;
+        }
+    }
+
+    .form-location select {
+        border: none;
+        appearance: none;
+        padding: 5px 10px;
+    }
+
+    .form-date input {
+        border: none;
+        padding: 5px 10px;
+
+    }
+
+    .form-date input::-webkit-inner-spin-button,
+    .form-date input::-webkit-calendar-picker-indicator {
+        background: transparent;
+        bottom: 0;
+        color: transparent;
+        cursor: pointer;
+        height: 100%;
+        left: -25px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;    
+    }
+
+    .btn-search {
+        position: relative;
+        background-color: $second-color;
+        padding: 0px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        color: #fff;
+        
+        i  {
+            font-size: 30px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+            margin-top: 10px;
+
+            i  {
+                font-size: 25px;
+            }
+        }
+    }
+
+
+}
+
+.sugestion {
+    font-size: 13px;
+    color: $subheading-color;
+}
+
+.img-wrapper {
+    max-width: 800px;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+// service Css
+
+.service-wrapper {
+
+    margin-bottom: 80px;
+
+    .label-service {    
+        font-family: 'Raleway', sans-serif;
+        font-weight: map-get($fonts-weight, bold );
+        font-size: 20px;
+        color: $second-color;
+    }
+
+    .heading-service {
+        font-family: 'Raleway', sans-serif;
+        font-weight: map-get($fonts-weight, bold );
+        font-size: 40px;
+        color: $subheading-color;
+    }
+
+    .subheading-service {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: map-get($fonts-weight, regular );
+        font-size: 20px;
+        color: $subheading-color;
+    }
+}
+
+.box-wrapper {
+        
+        background-color: $first-color;
+        border-radius: 50px 50px 0 0;
+
+    .box-service {
+        position: relative;
+        padding: 30px;
+    
+
+        i {
+            padding-bottom: 20px;
+            font-size: 65px;
+            color: #fff;
+           
+
+        }
+
+        .heading-box {
+            font-family: 'Raleway', sans-serif;
+            font-weight: map-get($fonts-weight, bold );
+            font-size: 30px;
+            color: #fff;
+        }
+        
+        .subheading-box {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: map-get($fonts-weight, regular );
+            font-size: 14px;
+            color: #fff;
+    
+        }
+
+        .btn-learn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background-color: $second-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px 50px 0 0 ;
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            transition: .4s ease-in-out;
+
+            a {
+                color: $subheading-color;
+            }
+
+
+        }
+
+        
+    }
+
+    .box-service:hover .btn-learn{
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+        transition: .4s ease-in-out;
+    }
+}
+
+
+// Product Css
+.title-product {
+    .label-product {
+            font-family: 'Raleway', sans-serif;
+            font-weight: map-get($fonts-weight, bold );
+            font-size: 20px;
+            color: $second-color;
+    }
+
+    .heading-product {
+            font-family: 'Raleway', sans-serif;
+            font-weight: map-get($fonts-weight, bold );
+            font-size: 40px;
+            color: $subheading-color;
+    }
+
+    
+}
+
+.toggle-slide {
+    i {
+        font-size: 45px;
+        color: $first-color;
+
+        @include media-breakpoint-down(md) {
+        font-size: 30px;
+
+        }
+    }
+}
+
+.product-wrapper {
+
+    @include media-breakpoint-down(sm) {
+        width: 90%;
+    }
+
+    .card-product {
+        position: relative;
+        width: 400px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+} 
+
+
+.detail-product {
+    background-color: rgba(255, 255, 255, 0.356);
+    width: 85%;
+    position: absolute;
+    bottom: -43%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 5px rgba(117, 117, 117, 0.171);
+    transition: .5s ease-in-out;
+
+    .title-card h1 {
+        font-weight: map-get($fonts-weight , bold );
+        font-size: 30px;
+        color: $subheading-color;
+    }
+
+    .review {
+        i   {
+            color: #D0E200;
+            font-size: 20px;
+        }
+
+         p {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: map-get($fonts-weight, regular );
+            font-size: 18px ;
+            
+        }
+
+        
+        }
+       
+        .btn-product {
+            padding: 15px 30px;
+            border-radius: 60px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: map-get($fonts-weight , medium );
+            background-color: $second-color;
+            width: 50%;
+            
+            a {
+                color: #fff;
+            }
+         }
+
+         .category {
+            .label-category {
+                font-weight: map-get($fonts-weight , bold );
+                font-size: 18px;
+                color: #fff;
+                background-color: $second-color;
+                width:96px ;
+                height: 46;
+                padding: 5px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        
+        
+            .price {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: map-get($fonts-weight, semibold );
+                font-size: 22px;
+                color: #fff;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: $first-color;
+            }
+         
+          
+        }
+        
+}
+
+.card-product:hover .detail-product {
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+
+
+// Baner Css
+.baner {
+    background-color: $first-color;
+    border-radius: 15px;
+    padding: 30px;
+
+    @include media-breakpoint-up(lg) {
+    padding: 30px 30px 30px 50px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 90%;
+        }
+
+
+   
+    
+
+    .content {
+        .heading-baner {
+            font-weight: map-get($fonts-weight, extrabold );
+            font-size: 40px;
+            color: #fff;
+        }
+
+        .subheading-baner {
+            background-color: #355DAB;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: map-get($fonts-weight , semibold );
+            color: #fff;
+            max-width: 320px;
+        }
+
+        .discon-baner {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: map-get($fonts-weight , semibold );
+            color: #fff;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 30px;
+                
+            }
+            
+        }
+    }
+
+    .btn-book {
+            background-color: $second-color;
+            padding: 20px 40px;
+            border-radius: 60px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+            font-weight: map-get($fonts-weight , bold );
+            color: #fff;
+
+   
+
+            @include media-breakpoint-down(xxl) {
+                font-size: 16px;
+            }
+
+        &:hover{
+            color: $first-color;
+        }
+            
+    }
+    
+
+}
+
+// statistik Css
+
+
+.statistik-wrapper {
+    .label-statistik {
+            font-family: 'Raleway', sans-serif;
+            font-size: 25px;
+            font-weight: map-get($fonts-weight , bold );
+            color: $second-color;
+    }
+
+    .heading-statistik {
+            font-family: 'Raleway', sans-serif;
+            font-size: 50px;
+            font-weight: map-get($fonts-weight , bold );
+            color: $subheading-color;
+    }
+
+    .subheading-statistik {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: map-get($fonts-weight , regular );
+            color: $subheading-color;
+    }
+
+    .angka-wrapper {
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 50px;
+            font-weight: map-get($fonts-weight , extrabold );
+            color: $second-color;
+
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: map-get($fonts-weight , regular );
+            color: $subheading-color;
+        }
+    }
+
+
+}
+
+// Testi Css
+.testi-wrapper {
+    .label-testi {
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+        font-weight: map-get($fonts-weight , bold );
+        color: $second-color; 
+    }
+
+    .heading-testi {
+        font-family: 'Raleway', sans-serif;
+        font-size: 36px;
+        font-weight: map-get($fonts-weight , bold );
+        color: $subheading-color;  
+    }
+    
+    .subheading-testi {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: map-get($fonts-weight , regular );
+        color: $subheading-color; 
+    }
+}
+
+.card-testi {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    
+
+    
+
+    .text-testi {
+        position: relative;
+        padding: 20px;
+        width: 80%;
+
+
+        .bxs-quote-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .bxs-quote-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+    }
+
+    .username {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: map-get($fonts-weight , regular );
+        color: $subheading-color; 
+    }
+
+    .status {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: map-get($fonts-weight , regular );
+        color: $second-color; 
+    }
+}
+
+// baner2
+.baner2 {
+    background-color: $second-color;
+    border-radius: 15px;
+    padding: 30px;
+
+    @include media-breakpoint-up(lg) {
+    padding: 30px 30px 30px 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 90%;
+        }
+    
+    .content {
+        .heading-baner-dua {
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+            font-weight: map-get($fonts-weight , extrabold );
+            color: $subheading-color;
+        }
+
+        .subheading-baner-dua {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            font-weight: map-get($fonts-weight , regular );
+            color: $subheading-color; 
+        }
+
+        .discon-2 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+            font-weight: map-get($fonts-weight , bold );
+            color: #fff;
+            background-color: #284F9D54; 
+            border-radius: 20px;
+            max-width: 270px ;
+            padding: 10px;
+        }
+    }
+
+
+    .btn-register {
+        font-size: 30px;
+        padding: 20px 40px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 16px;
+        }
+       &:hover{
+        color: $second-color;
+       } 
+    }
+   
+}
+
+.col-banner-wrapper {
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+    }
+}
+
+
+// Footer Css
+
+.footer-section {
+    .foot-tour {
+        color: $first-color;
+        font-weight: map-get($fonts-weight , bold );
+        font-size: 45px;
+    }
+    
+    .footer-logo {
+        .foot-avel {
+            font-size: 30px;
+            color: $second-color;
+            font-weight: map-get($fonts-weight , medium );
+        
+        }
+    
+    }
+    
+    .icon-sosmed {
+        i {
+            font-size: 40px;
+            color: $first-color;
+        }
+    }
+    
+    .copyright {
+        font-size: 12px;
+    }
+
+    .heading-footer h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        font-weight: map-get($fonts-weight , bold );
+        color: black;
+        padding: 20px;
+
+        text-align: center;
+
+    }
+
+    .heading-footer p {
+        padding: 5px 0;
+        text-align: center;
+
+    }
+
+    .form-input input {
+        border: none;
+    }
+
+    .form-input input:focus {
+        outline: none;
+    }
+
+    .form-input {
+        position: relative;
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 20px 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+
+        .btn-footer {
+            position: absolute;
+            right: 0;
+            top: 20%;
+            transform: translateX(-10px);
+        }
+    }
+
+    .heading-footer p {
+        padding: 5px 0;
+
+    }
+
+    .heading-footer-end h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        font-weight: map-get($fonts-weight , bold );
+        color: black;
+        padding: 20px 0;
+
+    }
+
+    .footer-logo-wrapper {
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+
+        .icon-sosmed {
+            @include media-breakpoint-down(lg) {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+}
+

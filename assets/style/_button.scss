@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'fonts';
+
+.btn-master {
+    padding: 25px;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: map-get($fonts-weight , bold );
+}
+
+.btn-first {
+    @extend .btn-master;
+        background-color: $second-color;
+        color: #fff;
+    &:hover{
+            background-color: $first-color;
+            color: #fff;
+        }
+    @include media-breakpoint-down(lg) {
+        padding: 15px;
+    }
+    
+}
+
+.btn-hero {
+    padding: 10px;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: map-get($fonts-weight , bold );
+    color: #fff;
+}
+
+.btn-detail {
+    padding: 25px 30px;
+    border-radius: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: map-get($fonts-weight , medium );
+    background-color: $second-color;
+}
+
+.btn-register {
+    @extend .btn-master;
+    background-color: $first-color;
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.btn-footer {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: $second-color;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: map-get($fonts-weight , bold );
+}
